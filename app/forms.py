@@ -11,5 +11,5 @@ class ProfileForm(forms.ModelForm):
     class Meta():
         model=Profile
         fields=['Address','Profile_pic']
-        widget = {'Address':forms.Textarea(attrs={'cols':3,'rows':2})}
+        # widget = {'Address':forms.Textarea(attrs={'cols':3,'rows':2})}
         
