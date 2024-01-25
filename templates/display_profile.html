@@ -1,0 +1,16 @@
+{% extends 'parent.html' %}
+
+{% block title %}
+<title>Profile</title>
+{% endblock %}
+
+{% block body_block %}
+<center>
+    <h1>Details of the user</h1>
+    <h4>Username is :{{user.username}}</h4>
+    <h4>Email is :{{user.email}}</h4>
+    <h4>Address :{{profile.Address}}</h4>
+    <h4>Image is</h4>
+    <img src="{{profile.Profile_pic.url}}" alt="Image not found" height="300px" width="400px">
+</center>
+{% endblock %}
